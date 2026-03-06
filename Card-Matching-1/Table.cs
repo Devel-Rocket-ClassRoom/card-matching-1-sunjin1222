@@ -6,7 +6,7 @@ using System.Reflection.Metadata;
 using System.Text;
 
 
-    internal class Table123
+internal class Table123
 {
 
     public int[] Tablecards;
@@ -52,11 +52,8 @@ using System.Text;
         secondIndex = -1;
     }
 
-
-
     public void fisrst()
       {
-
           while (true)
           {
               Console.WriteLine();

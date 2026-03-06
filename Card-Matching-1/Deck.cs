@@ -16,23 +16,13 @@ class Deck
 
     public static int GameendCounter=1;
 
-    public int discovernumber = 8;
+    public int discovernumber = 0;
     public int hiddennumber = 8;
 
 
     public int Draw()
     {
         return CurrDeck[Counter++];
-    }
-    public void endCheck()
-    {
-        if(discovernumber == 8)
-        {
-            Console.WriteLine("=== 게임 클리어! ===");
-            Console.WriteLine($"총 시도 횟수: {GameendCounter}");
-
-            return;
-        }
     }
 
     public void NewDeck()
