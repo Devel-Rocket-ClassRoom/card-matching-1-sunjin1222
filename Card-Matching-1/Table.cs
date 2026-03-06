@@ -32,11 +32,10 @@ internal class Table123
     {
         string firstCard = deck.CardNumbers[Tablecards[firstIndex]];
         string secondCard = deck.CardNumbers[Tablecards[secondIndex]];
-
+        Deck.GameendCounter++;
         if (firstCard == secondCard)
         {
             deck.discovernumber++;
-            Deck.GameendCounter++;
             Console.WriteLine();
             Console.WriteLine("짝을 찾았습니다!");
         }

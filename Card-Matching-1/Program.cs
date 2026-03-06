@@ -26,6 +26,9 @@ while (true)
         table.CheckMatch(deck);
         Thread.Sleep(1500);
         Console.Clear();
+
+
+
         if (deck.discovernumber == 8)
         {
             Console.WriteLine("=== 게임 클리어! ===");
