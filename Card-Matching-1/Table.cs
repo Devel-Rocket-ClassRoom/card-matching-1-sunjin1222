@@ -20,6 +20,7 @@ internal class Table123
     {
         Tablecards = new int[16];
     }
+
     public void open(params int[] cards)
     {
         foreach (int card in cards)
@@ -124,7 +125,14 @@ internal class Table123
                   continue;
               }
 
-              int index = (row - 1) * 4 + (line - 1);
+
+            if (row < 1 || row > 4 || line < 1 || line > 4)
+            {
+                Console.WriteLine("1부터 4까지의 숫자를 입력해주세요.");
+                continue;
+            }
+
+            int index = (row - 1) * 4 + (line - 1);
 
               if (Opened[index])
               {
