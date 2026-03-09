@@ -5,7 +5,7 @@ using System.Threading;
 while (true)
 {
     Console.WriteLine("=== 카드 짝 맞추기 게임 ===");
-    Table123 table = new Table123();
+    Table table = new();
     Deck deck = new();
     deck.NewDeck();
     table.open(deck.Draw(), deck.Draw(), deck.Draw(), deck.Draw());
@@ -40,6 +40,7 @@ while (true)
                 if (input == "Y")
                 {
                     Console.Clear();
+                    Deck.GameendCounter = 1;
                     break;
                 }
 
@@ -52,7 +53,9 @@ while (true)
                 {
                     Console.WriteLine("다시 입력해 주세요");
                 }
+               
             }
+            break;
         }
         
     }

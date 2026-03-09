@@ -20,6 +20,12 @@ class Deck
     public int hiddennumber = 8;
 
 
+    public Deck()
+    {
+        int discovernumber = 0;
+        int hiddennumber = 8;
+    }
+
     public int Draw()
     {
         return CurrDeck[Counter++];
@@ -52,7 +58,7 @@ class Deck
     }
 
 
-    public void Showcard(Table123 table)
+    public void Showcard(Table table)
     {
     
         string cardNumber;

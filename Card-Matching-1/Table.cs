@@ -6,7 +6,7 @@ using System.Reflection.Metadata;
 using System.Text;
 
 
-internal class Table123
+internal class Table
 {
 
     public int[] Tablecards;
@@ -16,7 +16,7 @@ internal class Table123
     public int secondIndex = -1;
 
 
-    public Table123()
+    public Table()
     {
         Tablecards = new int[16];
     }
